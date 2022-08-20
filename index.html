@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compat3ible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="./main.js" defer></script>
     <title>Abstract Help Page</title>
     <link rel="stylesheet" href="./style.css" />
@@ -12,7 +19,7 @@
     <header>
       <div class="topbar-wrapper">
         <div class="logo-wrapper">
-          <a href="#" class="logo"
+          <a title="go to github.com" href="#" class="logo"
             ><svg
               class="abstract-logo logo"
               xmlns="http://www.w3.org/2000/svg"
@@ -60,15 +67,11 @@
                 ></path>
               </g></svg
           ></a>
-          <a href="#" class="helpcenter-link">Help Center</a>
+          <a href="#" title="Home" class="helpcenter-link">Help Center</a>
         </div>
-        <div class="topbar-search">
-          <button class="search-btn">Icon</button>
-          <button id="menu-btn" class="menu-ham">
-            <span class="ham-top"></span>
-            <span class="ham-mid"></span>
-            <span class="ham-bot"></span>
-          </button>
+        <div class="topbar-request">
+          <button class="request-btn" type="submit">Submit a request</button>
+          <button class="signin-btn">Sign in</button>
         </div>
       </div>
     </header>
