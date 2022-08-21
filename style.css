@@ -172,3 +172,59 @@ header {
 .search-inner .search-form #query:hover + i {
   color: #484fd4;
 }
+
+/* Services Section */
+
+.services-fullwrapper {
+  background: #fff;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.services-cards {
+  position: relative;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  width: 40%;
+  min-height: 11rem;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 2rem;
+}
+
+.card .card-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 9rem;
+  height: auto;
+  margin: auto;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-texts {
+  width: 100%;
+  height: auto;
+  margin-left: 2rem;
+  padding-right: 1rem;
+}
+
+.card-texts .card-heading {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
