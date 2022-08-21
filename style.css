@@ -179,13 +179,11 @@ header {
   background: #fff;
   width: 100%;
   min-height: 100vh;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding: 10rem;
 }
 
 .services-cards {
   position: relative;
-  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,11 +193,12 @@ header {
 
 .card {
   display: flex;
-  width: 40%;
-  min-height: 11rem;
+  width: 50%;
+  height: 27rem;
+  min-height: 18rem;
   justify-content: center;
   align-items: center;
-  margin: 3rem 2rem;
+  margin-bottom: 4rem;
 }
 
 .card .card-img {
@@ -208,8 +207,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 9rem;
-  height: auto;
-  margin: auto;
+  max-height: 10rem;
 }
 
 .card .card-img img {
@@ -218,13 +216,22 @@ header {
 }
 
 .card-texts {
-  width: 100%;
-  height: auto;
+  width: 60%;
+  max-height: 10rem;
   margin-left: 2rem;
   padding-right: 1rem;
 }
 
 .card-texts .card-heading {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
+}
+
+.card-texts .card-text {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+.card-texts .card-link {
+  color: #484fd4;
 }
