@@ -42,6 +42,7 @@ header {
   padding: 1rem 6%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .logo-wrapper {
@@ -110,6 +111,32 @@ header {
 .topbar-request .signin-btn:hover {
   background: #fff;
   color: #222;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  width: 25px;
+  height: 20px;
+  background: none;
+  border: none;
+}
+
+.hamburger-menu .ham-top,
+.hamburger-menu .ham-mid,
+.hamburger-menu .ham-bot {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  transition: transform 0.3s;
+}
+
+.hamburger-menu .ham-mid {
+  transform: translateY(5px);
+}
+.hamburger-menu .ham-bot {
+  transform: translateY(10px);
 }
 
 /* Search Section */
