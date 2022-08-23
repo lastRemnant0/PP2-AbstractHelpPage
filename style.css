@@ -120,6 +120,7 @@ header {
   height: 20px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .hamburger-menu .ham-top,
@@ -137,6 +138,25 @@ header {
 }
 .hamburger-menu .ham-bot {
   transform: translateY(10px);
+}
+
+/* Change Hamburger to X when open */
+
+.open {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+
+.open .ham-top {
+  transform: rotate(45deg) translateY(9px) translateX(9px);
+}
+
+.open .ham-mid {
+  display: none;
+}
+
+.open .ham-bot {
+  transform: rotate(-45deg) translateY(7px) translateX(-7px);
 }
 
 /* Search Section */
@@ -341,4 +361,25 @@ footer {
 
 .footer-copyright .abstract-logo-footer {
   width: 13rem;
+}
+
+/* Media query */
+
+@media (max-width: 1200px) {
+  .topbar-request {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 950px) {
+  .logo-wrapper .logo {
+    width: 10rem;
+  }
+
+  .logo-wrapper .helpcenter-link {
+    font-size: 2rem;
+  }
 }
