@@ -268,7 +268,7 @@ header {
 }
 
 .card-texts {
-  width: 60%;
+  width: 65%;
   max-height: 10rem;
   margin-left: 2rem;
   padding-right: 1rem;
@@ -372,6 +372,18 @@ footer {
   .hamburger-menu {
     display: block;
   }
+  .footer-wrapper .footer-links {
+    width: 17%;
+  }
+  .footer-links .footer-heading {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .search-inner .search-heading {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -379,7 +391,70 @@ footer {
     width: 10rem;
   }
 
+  .card {
+    height: 35rem;
+    min-height: 33rem;
+    margin-bottom: 9rem;
+  }
+
+  .card .card-img {
+    margin-left: 0.5rem;
+  }
+
   .logo-wrapper .helpcenter-link {
     font-size: 2rem;
+  }
+  .footer-wrapper .footer-links {
+    width: 35%;
+  }
+}
+
+@media (max-width: 770px) {
+  .search-inner .search-heading {
+    font-size: 5.5rem;
+  }
+  .card {
+    width: 100%;
+    height: 30rem;
+    margin-bottom: 4rem;
+  }
+
+  .card .card-img {
+    width: 9.5rem;
+  }
+
+  .card .card-texts {
+    width: 80%;
+  }
+
+  .footer-wrapper {
+    width: 95%;
+  }
+
+  .footer-wrapper .footer-links {
+    margin-right: -1rem;
+  }
+
+  .services-fullwrapper {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .services-fullwrapper .services-cards {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 620px) {
+  .footer-wrapper .footer-links {
+    margin-right: 0;
+    width: 45%;
+    margin-bottom: 2rem;
+  }
+
+  .footer-wrapper .footer-copyright {
+    left: 0;
+    bottom: auto;
   }
 }
