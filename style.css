@@ -458,3 +458,37 @@ footer {
     bottom: auto;
   }
 }
+
+@media (max-width: 500px) {
+  .search-inner .search-heading {
+    font-size: 4.5rem;
+  }
+
+  .search-inner .search-form {
+    min-width: 25rem;
+  }
+
+  .services-fullwrapper {
+    padding-top: 1rem;
+    padding-bottom: 8rem;
+  }
+
+  .services-fullwrapper .services-cards {
+    width: 100%;
+  }
+
+  .card {
+    height: 38rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-wrapper .footer-copyright {
+    left: 1rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .search-inner .search-heading {
+    font-size: 3.4rem;
+  }
+}
