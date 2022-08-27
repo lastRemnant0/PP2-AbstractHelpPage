@@ -33,9 +33,11 @@ header {
   height: 9rem;
   max-height: 10rem;
   background-color: #000;
+  z-index: 4;
 }
 
 .topbar-wrapper {
+  z-index: 5;
   display: flex;
   width: 100%;
   height: 100%;
@@ -111,6 +113,49 @@ header {
 .topbar-request .signin-btn:hover {
   background: #fff;
   color: #222;
+}
+
+/* Request and sign up for mobile */
+.topbar-request-mobile {
+  width: 100%;
+  height: 23rem;
+  background: #000;
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #b8b8b8;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in-out;
+}
+
+.topbar-request-mobile.active {
+  transform: translateY(0);
+  z-index: 10;
+}
+
+.topbar-request-mobile .request-btn,
+.topbar-request-mobile .signin-btn {
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.5rem 5rem;
+  background: none;
+  border: none;
+  transition: color 0.5s;
+}
+
+.topbar-request-mobile .line {
+  width: 45%;
+  height: 1px;
+  background: #b8b8b8;
+}
+
+.topbar-request-mobile .request-btn:hover,
+.topbar-request-mobile .signin-btn:hover {
+  color: #cccccc;
 }
 
 /* Hamburger Menu */
